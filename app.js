@@ -8,12 +8,15 @@ var http = require("http").Server(app);
 
 
 
+
+
 // api files
 var version = "/api/v1";
 
 
 
-app.use(version, require("./routes/note"));
+app.use(version, require("./routes/job"));
+
 
 
 
@@ -43,6 +46,8 @@ app.use(function (req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+
+
 
 // runing on port
 app.set("port", 8152);
