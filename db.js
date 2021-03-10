@@ -10,7 +10,7 @@ function connectDatabase() {
       port: "3306",
       user: "root",
       password: "",
-      database: "testone",
+      database: "sample",
       multipleStatements: true,
       dateStrings: "Date"
     });
